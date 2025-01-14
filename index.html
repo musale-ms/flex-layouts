@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: red;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .header {
+            background-color: blue;
+            height: 100px;
+            flex-shrink: 0;
+        }
+        .body {
+            background-color: green;
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+        }
+        .sidebar {
+            background-color: pink;
+            width: 200px;
+            flex-shrink: 0;
+            overflow-y: auto;
+            height: calc(100vh - 150px); /* 100vh - header height - footer height */
+        }
+        .main {
+            background-color: orange;
+            flex: 1;
+            overflow-y: auto;
+            height: calc(100vh - 150px); /* 100vh - header height - footer height */
+        }
+        .footer {
+            background-color: yellow;
+            height: 50px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Some header</div>
+        <div class="body">
+            <div class="sidebar">
+                <ul>
+                    <li>Lorem ipsum odor amet, consectetuer adipiscing elit</li>
+                    <li>Pharetra volutpat sagittis ac efficitur vitae volutpat maximus a</li>
+                    <li>Sem laoreet pellentesque natoque maecenas ante! Montes aptent vivamus habitasse; finibus nec vivamus congue lobortis</li>
+                    <li>Vitae curabitur erat imperdiet nibh cursus porttitor ligula</li>
+                    <li>Varius hac sodales sem ullamcorper sem neque accumsan netus tempus</li>
+                    <li>Eleifend egestas litora nam ullamcorper id volutpat</li>
+                    <li>Platea at accumsan; faucibus nec mattis eu</li>
+                    <li>Sollicitudin etiam curae tempus finibus condimentum class</li>
+                    <li>Massa diam cras volutpat justo felis duis</li>
+                    <li>Tempor habitasse ridiculus class ut duis id vel facilisis</li>
+                    <li>Et adipiscing ad quam condimentum nascetur tempor diam</li>
+                    <li>Ultricies scelerisque placerat risus phasellus fames</li>
+                    <li>Nibh habitant nibh luctus leo dui parturient interdum justo</li>
+                    <li>Mattis ridiculus eu sollicitudin aliquet consequat metus</li>
+                    <li>At congue mattis consequat malesuada, mauris lacinia semper</li>
+                    <li>Fringilla nisl convallis tristique; consequat adipiscing himenaeos</li>
+                    <li>Nam sollicitudin erat ante feugiat adipiscing laoreet sed</li>
+                    <li>Ut elit pulvinar a neque lacinia luctus elit</li>
+                    <li>Pulvinar ut dapibus id lectus egestas feugiat faucibus</li>
+                    <li>Sapien tristique blandit habitasse class etiam nascetur erat ridiculus</li>
+                    <li>Platea primis sem molestie ad vehicula condimentum sapien phasellus ullamcorper</li>
+                    <li>Habitant aliquam enim rutrum et eget dignissim aliquet justo molestie</li>
+                    <li>Venenatis consequat malesuada; dui eget facilisis posuere</li>
+                    <li>Dignissim pharetra tempus consectetur scelerisque pretium a nullam</li>
+                    <li>Aliquet primis purus finibus sit potenti</li>
+                    <li>Aliquet praesent efficitur cursus habitant augue</li>
+                    <li>Cursus donec gravida consectetur id congue diam vitae dapibus? Odio suscipit parturient laoreet eros ornare duis vivamus metus? Mattis montes et consectetur augue aptent suspendisse nulla</li>
+                    <li>Risus quisque tellus gravida dui quisque sagittis</li>
+                    <li>Penatibus imperdiet varius dolor tempor sem id fusce vivamus</li>
+                    <li>Dapibus eu malesuada donec pulvinar efficitur mus ad</li>
+                    <li>Velit consequat montes maximus class inceptos egestas cras pharetra</li>
+                    <li>Leo cursus scelerisque orci lectus rutrum platea; adipiscing sem</li>
+                    <li>Rhoncus elit lectus tristique magnis ridiculus dictum odio</li>
+                    <li>Dolor porta ut maximus, dictumst blandit porttitor dis ad</li>
+                    <li>Luctus lectus suspendisse euismod penatibus curae duis risus</li>
+                    <li>Aliquet ornare purus convallis sapien cras cubilia</li>
+                    <li>Odio velit accumsan sodales fermentum aliquam</li>
+                    <li>Odio dolor magnis nam penatibus fermentum sapien vivamus eu</li>
+                    <li>Nascetur dapibus phasellus dis porttitor ut! Mi pulvinar elementum nostra suscipit rutrum fames? Augue scelerisque ultricies maximus sodales aliquet ut et vitae</li>
+                    <li>Integer ante ut orci platea fusce sollicitudin</li>
+                    <li>Placerat class ligula congue a duis sagittis urna</li>
+                    <li>Vehicula lacus accumsan, lacus cubilia accumsan morbi cursus</li>
+                    <li>Netus libero ornare est in lacinia ligula ullamcorper, cras nec</li>
+                    <li>Ultrices vel aliquet sed neque libero mauris</li>
+                    <li>Conubia vivamus nec aenean nisi lacus posuere praesent</li>
+                    <li>Aliquam torquent nisi sit odio mollis venenatis vitae</li>
+                    <li>Varius urna vehicula sed hac et cursus sem</li>
+                    <li>Dis est posuere hac ullamcorper posuere iaculis? Molestie maecenas nam commodo laoreet vulputate vel litora tempus</li>
+                    <li>Inceptos egestas dui erat congue facilisi egestas vulputate</li>
+                    <li>Suscipit porttitor nibh fusce eros ut sollicitudin natoque convallis odio</li>
+                    <li>At sociosqu at id tincidunt tempus</li>
+                    <li>Tempor nec eget viverra pellentesque suspendisse? Venenatis ex justo pellentesque nibh blandit? Malesuada a accumsan fusce nascetur odio consectetur! Mattis hac integer quam ligula potenti maximus potenti sodales</li>
+                    <li>Viverra a natoque conubia augue lectus purus consequat malesuada etiam</li>
+                    <li>Pharetra posuere netus sit sociosqu orci facilisi id habitant</li>
+                </ul>
+            </div>
+            <div class="main">Some main content</div>
+        </div>
+        <div class="footer">Some footer</div>
+    </div>
+</body>
+</html>
